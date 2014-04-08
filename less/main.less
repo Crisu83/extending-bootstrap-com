@@ -1,0 +1,82 @@
+@import "../bower_components/bootstrap/less/bootstrap";
+
+@import "theme/bootswatch";
+@import "theme/variables";
+
+.content {
+  padding: 20px 0 40px;
+}
+
+.book-details {
+  .well;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .specs {
+    margin-bottom: 20px;
+  }
+
+  dt {
+    float: left;
+    text-align: right;
+    width: 120px;
+  }
+
+  dd {
+    margin-bottom: 10px;
+    padding-left: 130px;
+  }
+
+  .buy-button {
+    .btn;
+    .btn-lg;
+    .btn-primary;
+    .btn-block;
+  }
+}
+
+h2[id], h3[id] {
+  padding-top: 10px;
+}
+
+.navigation {
+  margin-top: 20px;
+  width: 260px;
+
+  &.affix {
+    position: fixed;
+    top: 20px;
+  }
+
+  .nav {
+    a {
+      border-left: solid 2px transparent;
+
+      &:hover {
+        border-left: solid 2px #aaa;
+      }
+    }
+
+    .nav > li > a {
+      font-size: 14px;
+      padding-left: 28px;
+    }
+
+    > .active {
+      > a,
+      &:hover > a,
+      &:focus > a {
+        border-left: solid 2px @brand-primary;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #eee;
+  padding: 40px 0;
+  text-align: center;
+}
