@@ -5780,6 +5780,12 @@ body {
 .content {
   padding: 20px 0 40px;
 }
+.book-cover {
+  text-align: center;
+}
+.book-cover > img {
+  margin-bottom: 20px;
+}
 .book-details {
   min-height: 20px;
   padding: 19px;
@@ -5920,7 +5926,6 @@ h3[id] {
 }
 .navigation .nav a:hover {
   border-left: solid 2px #aaa;
-  color: #555;
 }
 .navigation .nav .nav > li > a {
   font-size: 14px;
