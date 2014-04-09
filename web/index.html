@@ -16,9 +16,24 @@
     <!-- End Facebook OpenGraph tags -->
 
     <link rel="canonical" href="http://extending-bootstrap.com" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css"/>
+
+    <script>
+        /**
+         * Function that tracks a click on an outbound link in Google Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label.
+         */
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'hitCallback': function () {
+                    document.location = url;
+                }
+            });
+        }
+    </script>
 
     <!-- Google Analytics -->
     <script>
@@ -84,7 +99,8 @@
                             </dl>
 
                             <a class="buy-button" href="http://www.packtpub.com/extending-bootstrap/book"
-                               target="_blank">Buy the book</a>
+                               target="_blank"
+                               onclick="trackOutboundLink('http://www.packtpub.com/extending-bootstrap/book');">Buy the book</a>
 
                         </div>
                     </div>
@@ -148,16 +164,15 @@
                     into reality. During his hours off from work, he maintains his open source projects, experiments
                     with web technologies, and makes arcade games using HTML5 and JavaScript.</p>
 
-                <p>Christoffer's Twitter handle is <a href="http://twitter.com/Crisu83" target="_blank">@Crisu83</a> and
-                    his online portfolio can be found at <a href="http://crisu83.me"
-                                                            target="_blank">http://crisu83.me</a>. Extending Bootstrap
-                    is his first official attempt at writing and very likely, not the last.</p>
+                <p>Christoffer's Twitter handle is <a href="http://twitter.com/Crisu83" target="_blank" rel="nofollow">@Crisu83</a>
+                    and his online portfolio can be found at <a href="http://crisu83.me" target="_blank" rel="nofollow">http://crisu83.me</a>.
+                    Extending Bootstrap is his first official attempt at writing and very likely, not the last.</p>
 
             </div>
         </div>
         <div class="col-md-3">
 
-            <div class="navigation hidden-sm" data-spy="affix" data-offset-top="300" role="complementary">
+            <div class="navigation hidden-sm" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="complementary">
 
                 <ul class="nav">
                     <li>
@@ -192,7 +207,20 @@
 
 <footer>
     <div class="container">
-        &copy; 2014 Christoffer Niska
+        <p class="copyright">
+            &copy; 2014 Christoffer Niska
+        </p>
+        <ul class="footer-links">
+            <li>1st Edition</li>
+            <li>&middot;</li>
+            <li><a href="https://groups.google.com/d/forum/extending-bootstrap" target="_blank" rel="nofollow"
+                   onclick="trackOutboundLink('https://groups.google.com/d/forum/extending-bootstrap')">Google Group</a></li>
+            <li>&middot;</li>
+            <li><a href="http://github.com/Crisu83/extending-bootstrap-code" target="_blank" rel="nofollow"
+                   onclick="trackOutboundLink('http://github.com/Crisu83/extending-bootstrap-code')">Code on GitHub</a></li>
+            <li>&middot;</li>
+            <li><a href="http://getbootstrap.com" target="_blank" rel="nofollow">Bootstrap home</a></li>
+        </ul>
     </div>
 </footer>
 
