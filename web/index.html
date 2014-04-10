@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Extending Bootstrap</title>
+    <meta name="description" content="The official website for the book titled Extending Bootstrap written by Christoffer Niska and published by Packt Publishing."/>
 
     <!-- Facebook Open Graph tags -->
     <meta property="og:title" content="Extending Bootstrap"/>
@@ -31,240 +33,219 @@
     <!-- End Google Analytics -->
 </head>
 <body data-spy="scroll" data-target=".navigation">
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-<div class="jumbotron">
-    <div class="container">
-        <h1>Extending Bootstrap</h1>
-        <p>A book written by Christoffer Niska and published by Packt Publishing.</p>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Extending Bootstrap</h1>
+            <p>A book written by Christoffer Niska and published by Packt Publishing.</p>
+        </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-9">
-            <div class="content" role="main">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="book-cover">
-                            <img src="images/cover.jpg" alt="Extending Bootstrap" width="407" height="516"/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="content" role="main">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="book-cover">
+                                <img src="images/cover.jpg" alt="Extending Bootstrap" width="407" height="516"/>
+                            </div>
                         </div>
+
+                        <div class="col-md-6">
+                            <div class="book-details" id="book-details">
+
+                                <h3>Book details</h3>
+
+                                <dl class="specs">
+                                    <dt>Language</dt>
+                                    <dd>English</dd>
+
+                                    <dt>Paperback</dt>
+                                    <dd>88 pages</dd>
+
+                                    <dt>Release Date</dt>
+                                    <dd>March 2014</dd>
+
+                                    <dt>ISBN</dt>
+                                    <dd>1782168419</dd>
+
+                                    <dt>ISBN 13</dt>
+                                    <dd>9781782168416</dd>
+
+                                    <dt>Author</dt>
+                                    <dd>Christoffer Niska</dd>
+
+                                    <dt>Publisher</dt>
+                                    <dd>Packt Publishing</dd>
+
+                                    <dt>Topics</dt>
+                                    <dd>Application Development, Web Development, Open Source</dd>
+                                </dl>
+
+                                <a class="buy-button" href="http://www.packtpub.com/extending-bootstrap/book"
+                                   target="_blank"
+                                   onclick="_gaq.push(['_trackEvent', 'Book details', 'click', 'Buy the book'])">Buy the book</a>
+
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="book-details" id="book-details">
+                    <h2 id="about-the-book">About the book</h2>
 
-                            <h3>Book details</h3>
+                    <h3 id="what-you-will-learn">What you will learn</h3>
 
-                            <dl class="specs">
-                                <dt>Language</dt>
-                                <dd>English</dd>
+                    <ul>
+                        <li>Create your first Bootstrap project</li>
+                        <li>Customize your project with themes through CSS</li>
+                        <li>Use Bootstrap with LESS</li>
+                        <li>Build a custom build with Grunt.js</li>
+                        <li>Customize and extend JavaScript plugins</li>
+                        <li>Utilize third- party plugins such as Lightbox, Notify.js, and so on</li>
+                    </ul>
 
-                                <dt>Paperback</dt>
-                                <dd>88 pages</dd>
+                    <h3 id="in-detail">In detail</h3>
 
-                                <dt>Release Date</dt>
-                                <dd>March 2014</dd>
+                    <p>Bootstrap is a free collection of tools used to create websites and web applications. It contains HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Much has been written and said recently, in the world of web design and development, about Bootstrap. Some people call it a boon for web developers with little designing knowledge, while others call it a blessing for the designers. A user familiar with all that Bootstrap has to offer can extend the framework so that it no longer has the original look and feel of Twitter. This will allow you to use clever and novel ways of taking the power the standard library of Bootstrap has, and transform it into what you have envisioned.</p>
 
-                                <dt>ISBN</dt>
-                                <dd>1782168419</dd>
+                    <p>This is a practical, step-by-step guide to extending Bootstrap. It covers all the aspects of extending Bootstrap, including themes, customization, extending its plugins, and an introduction to several third- party Bootstrap plugins.</p>
 
-                                <dt>ISBN 13</dt>
-                                <dd>9781782168416</dd>
+                    <p>Once you understand why you should use Bootstrap in the first place, you will learn about custom themes. This book then walks you through customization with CSS, and introduces you to LESS. You will learn to use Grunt.js to generate your own custom build of Bootstrap, customize plugins and grids, and even build custom plugins! Finally you will explore the most useful third-party plugins for Bootstrap and end with creating your first Bootswatch theme. This is a complete guide to unlocking the true power of Bootstrap.</p>
 
-                                <dt>Author</dt>
-                                <dd>Christoffer Niska</dd>
+                    <h3 id="approach">Approach</h3>
 
-                                <dt>Publisher</dt>
-                                <dd>Packt Publishing</dd>
+                    <p>Practical and instruction-based, this concise book will take you from understanding what Bootstrap is, to creating your own Bootstrap theme in no time!</p>
 
-                                <dt>Topics</dt>
-                                <dd>Application Development, Web Development, Open Source</dd>
-                            </dl>
+                    <h3 id="who-is-this-book-for">Who this book is for</h3>
 
-                            <a class="buy-button" href="http://www.packtpub.com/extending-bootstrap/book"
-                               target="_blank"
-                               onclick="_gaq.push(['_trackEvent', 'Book details', 'click', 'Buy the book'])">Buy the book</a>
+                    <p>If you are an intermediate front-end developer or designer who wants to learn the secrets of Bootstrap, this book is perfect for you.</p>
 
-                        </div>
-                    </div>
+                    <h2 id="about-the-author">About the author</h2>
+
+                    <p>I am a web developer from Helsinki, Finland. I maintain many open source projects that are mainly extensions of the Yii PHP framework. My most notable open-source effort is Yiistrap, which is an extension for Yii that allows developers to use Twitter Bootstrap along with Yii in a very convenient way.</p>
+
+                    <p>I work as the CTO at Nord Software, a company based here in Helsinki that delivers cutting-edge web applications to various clients of all sizes. At work, I help clients to transform their vision into reality and during my hours off from work I maintain my open-source projects, experiment with web technologies and create arcade games using various technologies.</p>
+
+                    <p>My Twitter handle is <a href="http://twitter.com/Crisu83" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'Author links', 'click', 'Twitter'])">@Crisu83</a> and my portfolio can be found at <a href="http://crisu83.me" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'Author links', 'click', 'Portfolio'])">http://crisu83.me</a>. Extending Bootstrap is my first official attempt at writing and very likely, not the last.</p>
 
                 </div>
-
-                <h2 id="about-the-book">About the book</h2>
-
-                <h3 id="what-you-will-learn">What you will learn</h3>
-
-                <ul>
-                    <li>Create your first Bootstrap project</li>
-                    <li>Customize your project with themes through CSS</li>
-                    <li>Use Bootstrap with LESS</li>
-                    <li>Build a custom build with Grunt.js</li>
-                    <li>Customize and extend JavaScript plugins</li>
-                    <li>Utilize third- party plugins such as Lightbox, Notify.js, and so on</li>
-                </ul>
-
-                <h3 id="in-detail">In detail</h3>
-
-                <p>Bootstrap is a free collection of tools used to create websites and web applications. It contains
-                    HTML- and CSS-based design templates for typography, forms, buttons, navigation and other interface
-                    components, as well as optional JavaScript extensions. Much has been written and said recently, in
-                    the world of web design and development, about Bootstrap. Some people call it a boon for web
-                    developers with little designing knowledge, while others call it a blessing for the designers. A
-                    user familiar with all that Bootstrap has to offer can extend the framework so that it no longer has
-                    the original look and feel of Twitter. This will allow you to use clever and novel ways of taking
-                    the power the standard library of Bootstrap has, and transform it into what you have envisioned.</p>
-
-                <p>This is a practical, step-by-step guide to extending Bootstrap. It covers all the aspects of
-                    extending Bootstrap, including themes, customization, extending its plugins, and an introduction to
-                    several third- party Bootstrap plugins.</p>
-
-                <p>Once you understand why you should use Bootstrap in the first place, you will learn about custom
-                    themes. This book then walks you through customization with CSS, and introduces you to LESS. You
-                    will learn to use Grunt.js to generate your own custom build of Bootstrap, customize plugins and
-                    grids, and even build custom plugins! Finally you will explore the most useful third-party plugins
-                    for Bootstrap and end with creating your first Bootswatch theme. This is a complete guide to
-                    unlocking the true power of Bootstrap.</p>
-
-                <h3 id="approach">Approach</h3>
-
-                <p>Practical and instruction-based, this concise book will take you from understanding what Bootstrap
-                    is, to creating your own Bootstrap theme in no time!</p>
-
-                <h3 id="who-is-this-book-for">Who this book is for</h3>
-
-                <p>If you are an intermediate front-end developer or designer who wants to learn the secrets of
-                    Bootstrap, this book is perfect for you.</p>
-
-                <h2 id="about-the-author">About the author</h2>
-
-                <p>Christoffer Niska is a web developer from Helsinki, Finland. He maintains many open source projects
-                    that are mainly extensions of the Yii PHP framework. Christoffer's most notable open source effort
-                    is Yiistrap, which is an extension for Yii that allows developers to use Twitter Bootstrap along
-                    with Yii in a very convenient way.</p>
-
-                <p>Christoffer is the CTO at Nord Software Ltd., a company based in Helsinki that delivers cutting-edge
-                    web solutions to various clients of all sizes. At work, he helps clients to transform their vision
-                    into reality. During his hours off from work, he maintains his open source projects, experiments
-                    with web technologies, and makes arcade games using HTML5 and JavaScript.</p>
-
-                <p>Christoffer's Twitter handle is <a href="http://twitter.com/Crisu83" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'Author links', 'click', 'Twitter'])">@Crisu83</a>
-                    and his online portfolio can be found at <a href="http://crisu83.me" target="_blank" rel="nofollow" onclick="_gaq.push(['_trackEvent', 'Author links', 'click', 'Portfolio'])">http://crisu83.me</a>.
-                    Extending Bootstrap is his first official attempt at writing and very likely, not the last.</p>
-
             </div>
-        </div>
-        <div class="col-md-3">
+            <div class="col-md-3">
 
-            <div class="navigation hidden-sm" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="complementary">
+                <div class="navigation hidden-sm" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="complementary">
 
-                <ul class="nav">
-                    <li>
-                        <a href="#book-details">Book details</a>
-                    </li>
-                    <li>
-                        <a href="#about-the-book">About the book</a>
-                        <ul class="nav">
-                            <li>
-                                <a href="#what-you-will-learn">What will you learn</a>
-                            </li>
-                            <li>
-                                <a href="#in-detail">In detail</a>
-                            </li>
-                            <li>
-                                <a href="#approach">Approach</a>
-                            </li>
-                            <li>
-                                <a href="#who-is-this-book-for">Who is this book for</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#about-the-author">About the author</a>
-                    </li>
-                </ul>
+                    <ul class="nav">
+                        <li>
+                            <a href="#book-details">Book details</a>
+                        </li>
+                        <li>
+                            <a href="#about-the-book">About the book</a>
+                            <ul class="nav">
+                                <li>
+                                    <a href="#what-you-will-learn">What will you learn</a>
+                                </li>
+                                <li>
+                                    <a href="#in-detail">In detail</a>
+                                </li>
+                                <li>
+                                    <a href="#approach">Approach</a>
+                                </li>
+                                <li>
+                                    <a href="#who-is-this-book-for">Who is this book for</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#about-the-author">About the author</a>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer>
-    <div class="container">
-        <p class="copyright">
-            &copy; 2014 Christoffer Niska
-        </p>
-        <ul class="footer-links">
-            <li>1st Edition</li>
-            <li>&middot;</li>
-            <li><a href="https://groups.google.com/d/forum/extending-bootstrap" target="_blank" rel="nofollow"  onclick="_gaq.push(['_trackEvent', 'Footer links', 'click', 'Google Group'])">Google Group</a></li>
-            <li>&middot;</li>
-            <li><a href="http://github.com/Crisu83/extending-bootstrap-code" target="_blank" rel="nofollow"  onclick="_gaq.push(['_trackEvent', 'Footer links', 'click', 'Code on GitHub'])">Code on GitHub</a></li>
-            <li>&middot;</li>
-            <li><a href="http://getbootstrap.com" target="_blank" rel="nofollow">Bootstrap home</a></li>
-        </ul>
-    </div>
-</footer>
+    <footer>
+        <div class="container">
+            <p class="copyright">
+                &copy; 2014 Christoffer Niska
+            </p>
+            <ul class="footer-links">
+                <li>1st Edition</li>
+                <li>&middot;</li>
+                <li><a href="https://groups.google.com/d/forum/extending-bootstrap" target="_blank" rel="nofollow"  onclick="_gaq.push(['_trackEvent', 'Footer links', 'click', 'Google Group'])">Google Group</a></li>
+                <li>&middot;</li>
+                <li><a href="http://github.com/Crisu83/extending-bootstrap-code" target="_blank" rel="nofollow"  onclick="_gaq.push(['_trackEvent', 'Footer links', 'click', 'Code on GitHub'])">Code on GitHub</a></li>
+                <li>&middot;</li>
+                <li><a href="http://getbootstrap.com" target="_blank" rel="nofollow">Bootstrap home</a></li>
+            </ul>
+        </div>
+    </footer>
 
-<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
-<!-- Google Analytics -->
-<script type="text/javascript">
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-<!-- End Google Analytics -->
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <!-- End Google Analytics -->
 
-<!-- AddThis -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f362fc83fc39768"></script>
-<script type="text/javascript">
-    addthis.layers({
-        'theme': 'transparent',
-        'share': {
-            'position': 'left',
-            'numPreferredServices': 5
-        },
-        'follow': {
-            'services': [
-                {'service': 'twitter', 'id': 'Crisu83'},
-                {'service': 'linkedin', 'id': 'crisu83'},
-                {'service': 'google_follow', 'id': '+ChristofferNiska'}
-            ]
-        }
-    });
-</script>
-<!-- End AddThis -->
+    <!-- AddThis -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f362fc83fc39768"></script>
+    <script type="text/javascript">
+        addthis.layers({
+            'theme': 'transparent',
+            'share': {
+                'position': 'left',
+                'numPreferredServices': 5
+            },
+            'follow': {
+                'services': [
+                    {'service': 'twitter', 'id': 'Crisu83'},
+                    {'service': 'linkedin', 'id': 'crisu83'},
+                    {'service': 'google_follow', 'id': '+ChristofferNiska'}
+                ]
+            }
+        });
+    </script>
+    <!-- End AddThis -->
 
-<!-- UserVoice -->
-<script>
-    // Include the UserVoice JavaScript SDK (only needed once on a page)
-    UserVoice = window.UserVoice || [];
-    (function () {
-        var uv = document.createElement('script');
-        uv.type = 'text/javascript';
-        uv.async = true;
-        uv.src = '//widget.uservoice.com/jWwWbhuxofdaesUClddpLw.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(uv, s)
-    })();
+    <!-- UserVoice -->
+    <script>
+        // Include the UserVoice JavaScript SDK (only needed once on a page)
+        UserVoice = window.UserVoice || [];
+        (function () {
+            var uv = document.createElement('script');
+            uv.type = 'text/javascript';
+            uv.async = true;
+            uv.src = '//widget.uservoice.com/jWwWbhuxofdaesUClddpLw.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(uv, s)
+        })();
 
-    // Set colors
-    UserVoice.push(['set', {
-        accent_color: '#e2753a',
-        trigger_color: 'white',
-        trigger_background_color: 'rgba(46, 49, 51, 0.6)'
-    }]);
+        // Set colors
+        UserVoice.push(['set', {
+            accent_color: '#e2753a',
+            trigger_color: 'white',
+            trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+        }]);
 
-    // Add default trigger to the bottom-right corner of the window:
-    UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+        // Add default trigger to the bottom-right corner of the window:
+        UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
 
-    // Auto-prompt for Satisfaction and SmartVote (only displayed under certain conditions)
-    UserVoice.push(['autoprompt', {}]);
-</script>
-<!-- End UserVoice -->
+        // Auto-prompt for Satisfaction and SmartVote (only displayed under certain conditions)
+        UserVoice.push(['autoprompt', {}]);
+    </script>
+    <!-- End UserVoice -->
 
 </body>
 </html>
